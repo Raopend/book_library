@@ -76,7 +76,7 @@ def book_seat(seat_id: str, token: str, book_time: str):
 if __name__ == "__main__":
     current_time = datetime.datetime.now().strftime("%Y-%m-%d")
 
-    token = get_token(student_number="20496126", password="M5L@BL1H_NAE4DW(")
+    token = get_token(student_number="", password="")
     seat_available = get_seat_available(token=token)
     for key, value in seat_available.items():
         if value['name'] > '020':
